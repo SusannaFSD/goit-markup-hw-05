@@ -497,9 +497,7 @@ cursor: pointer;
 }
 .footer-container {
     display: flex;
-    justify-content: left;
-    /* align-items: center; */
-    align-items: baseline;
+        align-items: baseline;
 }
 
 .footer-icons {
@@ -507,6 +505,7 @@ cursor: pointer;
     justify-content: center;
         align-items: center;
         gap: 16px;
+        margin-right: 80px;
 }
 .footer-logo-text {
     margin-right: 120px;
@@ -537,3 +536,176 @@ cursor: pointer;
  align-items: center;
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
+
+
+ .footer-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    
+    
+ }
+
+.subscribe-text {
+font-family: "Roboto",
+sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+
+}
+
+.footer-form-input-email {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding-left: 16px;
+    outline: none;
+    /* margin-right: 24px; */
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+        margin-top: 16px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.button.footer-button {
+        border-radius: 4px;
+        padding: 8px 24px;
+        min-width: 165px;
+        height: 40px;
+        gap: 16px;
+        background-color: #4d5ae5;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        text-align: center;
+min-width: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.button.footer-button:hover, .button.footer-button:focus {
+    background-color: #404bbf;
+}
+
+.footer-btn {
+
+}
+
+.footer-button-icon {
+    fill: #fff;
+    
+}
+ .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+ }
+
+ .modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+width: 408px;
+min-height: 584px;
+
+padding-top: 72px;
+padding-right: 24px;
+padding-left: 24px;
+background-color: #fcfcfc;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.modal-title {
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+}
+.backdrop:not(.is-open) .modal {
+transform: translate(-50%, -100%);
+}
+
+.popup-close {
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    /* border-radius: 4px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    stroke-width: 1px;
+    background-color: rgb(231, 233, 252);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.icon-close {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popup-close:hover, .popup-close:focus {
+background-color: #404bbf;
+border: none;
+}
+
+.popup-close:hover .icon-close, .popup-close:hover .icon-close {
+    fill: #ffffff;
+}

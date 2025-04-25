@@ -491,7 +491,52 @@
             </li>
           </ul>
         </div>
+
+        <div>
+          <form name="footer-form">
+            <label class="subscribe-text">Subscribe</label>
+                <input
+                  class="footer-form-input-email"
+                  placeholder="E-mail"
+                  type="email"
+                  name="subscribe-email"
+                />
+</div>
+           <div class="footer-btn">
+             <button class="button footer-button" type="submit">
+              Subscribe
+              <svg class="footer-button-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+           </div>
+          </form>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="popup-close" type="button">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form>
+          <label for="username">Name</label>
+          <input type="text" name="username" id="username" />
+          <label for="userphone">Phone</label>
+          <input type="tel" name="userphone" id="userphone" />
+          <label for="useremail">Email</label>
+          <input type="email" name="useremail" id="useremail" />
+          <label for="usercomment">Comment</label>
+          <textarea
+            name="usercomment"
+            id="usercomment"
+            placeholder="Text input"
+          ></textarea>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
