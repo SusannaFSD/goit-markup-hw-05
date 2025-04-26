@@ -699,8 +699,6 @@ cursor: pointer;
 
 .modal-field {
     margin-bottom: 8px;
-    margin-bottom: 16px
-   
 }
 
 .modal-label {
@@ -782,7 +780,6 @@ cursor: pointer;
 }
 
 .modal-checkbox-label {
-    display: inline-flex;
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
